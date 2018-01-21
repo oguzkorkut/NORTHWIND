@@ -21,9 +21,9 @@ export class ShippingDetailComponent implements OnInit {
 
   ngOnInit() {
     this.cities.push(
-      {'id':1,'name': 'Gaziantep','plaka':27},
-      {'id':2,'name': 'Ankara','plaka':6},
-      {'id':3,'name': 'İstanbul','plaka':34}
+      {'id': 1, 'name': 'Gaziantep','plaka':27},
+      {'id': 2, 'name': 'Ankara','plaka':6},
+      {'id': 3, 'name': 'İstanbul','plaka':34}
     );
   }
 
