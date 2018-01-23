@@ -20,6 +20,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { CartService } from './cart/cart.service';
 import { VatAddedPipe } from './product/vat-added.pipe';
 import { ProductFilterPipe } from './product/product-filter.pipe';
+import { AccountService } from './account/account.service';
 
 const appRoutes: Routes = [
   {
@@ -42,6 +43,10 @@ const appRoutes: Routes = [
   {
     path: 'shipping-detail',
     component: ShippingDetailComponent
+  },
+  {
+    path: 'account',
+    component: AccountComponent
   }
 ];
 
@@ -70,7 +75,8 @@ const appRoutes: Routes = [
   providers: [
     { provide: 'apiUrl', useValue: 'http://northwindapi.azurewebsites.net/api' },
     NotificationsService,
-    CartService
+    CartService,
+    AccountService
   ],
   bootstrap: [AppComponent]
 })
